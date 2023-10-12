@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdmintblController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\usersController;
+use App\Http\Controllers\PDFController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,44 +16,50 @@ use App\Http\Controllers\usersController;
 */
 
 // home page
-Route::get('', [usersController::class, "main"]);
+Route::get('', [ProfileController::class, "main"]);
+
+// about
+Route::get('about-form', [ProfileController::class, "about"]);
+
 // loging page
-Route::get('login-form', [usersController::class, "login"]);
-// registation page
-Route::get('registation-form', [usersController::class, "registation"]);
-
-// add users
-Route::get('add-users', [usersController::class, "index"]);
-Route::post('add-users', [usersController::class, "create"]);
-
-// Display the login form
-Route::get('login', [usersController::class, 'showLoginForm'])->name('login');
-
-// Handle the login form submission
-Route::post('login', [usersController::class, 'loginfunction']);
+Route::get('login-form', [ProfileController::class, "login"]);
 
 // logout
-Route::get('logout', [usersController::class, "logout"]);
+Route::get('logout', [ProfileController::class, "logout"]);
+
+// registation page
+Route::get('registation-form', [ProfileController::class, "registation"]);
+
+// add users
+Route::get('add-users', [ProfileController::class, "index"]);
+Route::post('add-users', [ProfileController::class, "create"]);
+
+// Display the dashboards(login forms)
+Route::get('login', [ProfileController::class, 'showLoginForm'])->name('login');
+
+// Handle the login form submission
+Route::post('login', [ProfileController::class, 'loginfunction']);
 
 // search user
-Route::get('user-search', [usersController::class, "search"]);
+Route::get('user-search', [ProfileController::class, "search"]);
+// admin serch view
+Route::get('admin-search', [ProfileController::class, "searchView"]);
 
-// view user profile-admin view
-Route::get('update-user/{id}', [usersController::class, "updateView"]);
+// update user profile-admin view
+Route::get('update-user/{id}', [ProfileController::class, "updateView"]);
 
 // view user profile-admin view function
-Route::put('update-users-done/{id}', [usersController::class, "updateDone"]);
+Route::put('update-users-done/{id}', [ProfileController::class, "updateDone"]);
 
-// create pdf
-Route::get('generate-pdf/{id}', [usersController::class, "generatePDF"]);
+// delete user from admin
+Route::get('delet-user-from-admin/{id}', [ProfileController::class, "deleteUserFromAdmin"]);
+
+// delete user from user
+Route::get('delet-user-from-user/{id}', [ProfileController::class, "deleteUserFromUser"]);
 
 
-// admin -Crud
-Route::get('add-admin', [AdmintblController::class, "index"]);
-Route::post('add-admin', [AdmintblController::class, "create"]);
-Route::get('view-admin', [AdmintblController::class, "getData"]);
-Route::get('admin-search', [AdmintblController::class, "search"]);
-
+// pdf genarater
+Route::get('pdf-genarater/{id}', [PDFController::class, "generatePDF"]);
 
 
 

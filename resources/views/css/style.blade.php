@@ -104,7 +104,13 @@
     font-family: var(--body-font);
 
 }
-
+body {
+        font-family:var(--body-font);
+        font-size: 16px;
+        color: #120027;
+        font-weight: normal;
+        letter-spacing: 0.03em;
+    }
 
 
 
@@ -165,7 +171,10 @@ input{
     padding: 10px;
 }
 
-
+.btn-log-delete >a{
+    color: #dfdfdf;
+    text-decoration: none;
+}
 
 /* footer css */
 

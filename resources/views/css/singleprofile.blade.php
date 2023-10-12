@@ -13,6 +13,7 @@
     height: auto;
     border-radius: 20px;
     padding: 10px;
+    overflow: hidden;
     /* margin: 5px; */
     background-color: rgb(245, 245, 245);
     box-shadow: 1px 1px 10px 1px  rgb(216, 216, 216);
