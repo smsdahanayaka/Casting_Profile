@@ -12,9 +12,9 @@
               @endsection
               <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
               <div class="hero-text">
-                <h1><span>Hi, Join</span><br>The Crew..</h1>
+                <h1><span>Hi, Join</span><br>With Us..</h1>
                 <h3>casting registation</h3>
-                <a href="#login" class="btn btn-lg  btn-log">Login</a>
+                <a href="#login" class="btn btn-lg  btn-log">About</a>
 
               </div>
             </div>
@@ -33,7 +33,7 @@
               <div class="swiper-container client-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide client-box">
-                    <h3 class="text-left title">Login Your Profile</h3>
+                    <h3 class="text-left title">About us</h3>
 
                     @if (session('status'))
                     <h6 class="alert alert-success">{{ session('status') }}</h6>
@@ -81,11 +81,17 @@
 
 @section('script')
     <style>
-        .btn-log{
-            background-color: #320958 !important;
-            border: 0px solid purple;
-            color: white;
-        }
+        .btn-log {
+        background-color: #E4D2BA !important;
+        border: 0px solid purple;
+        font-weight: 500;
+        color: #101214;
+    }
+    .btn-log:hover {
+        background-color: #101214 !important;
+        border: 0px solid purple;
+        color: white;
+    }
 
         .login-form{
             width: 70vw;
@@ -99,14 +105,7 @@
             padding-top: 30px;
         }
 
-        header.hero {
-        background: url(../images/web/interested-woman-posing-sunglasses.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-bottom: 80px;
-    }
+
+
     </style>
 @endsection

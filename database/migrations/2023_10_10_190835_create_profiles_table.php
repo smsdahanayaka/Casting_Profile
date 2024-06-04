@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('whatsapp_number')->nullable();
             $table->string('email')->unique()->nullable();
             $table->string('home_town')->nullable();
+            $table->string('address')->nullable();
             $table->string('height')->nullable();
             $table->string('hair_color')->nullable();
             $table->string('eye_color')->nullable();

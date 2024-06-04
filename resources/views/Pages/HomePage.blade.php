@@ -11,7 +11,7 @@
                 @endsection
                 <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
                 <div class="hero-text">
-                    <h1><span>Hi, Join</span><br>The Crew..</h1>
+                    <h1><span>Hi, Join</span><br>With Us..</h1>
                     <h3>casting registation</h3>
                     <a href="#login" class="btn btn-lg  btn-log">Login</a>
                 </div>
@@ -98,7 +98,13 @@
 @section('script')
 <style>
     .btn-log {
-        background-color: #320958 !important;
+        background-color: #E4D2BA !important;
+        border: 0px solid purple;
+        font-weight: 500;
+        color: #101214;
+    }
+    .btn-log:hover {
+        background-color: #101214 !important;
         border: 0px solid purple;
         color: white;
     }
@@ -117,25 +123,6 @@
         padding-top: 30px;
     }
 
-    header.hero {
-        background: url(../images/web/1234-2.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-bottom: 80px;
-    }
 
-    /* For smaller screens (mobile)
-    @media (max-width: 425px) {
-        header.hero {
-            background: url(../images/web/425-main.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        }
-    } */
 </style>
 @endsection

@@ -11,7 +11,7 @@
                 @endsection
                 <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
                 <div class="hero-text">
-                    <h1><span>Hi, Join</span><br>The Crew..</h1>
+                    <h1><span>Hi, Join</span><br>With Us..</h1>
                     <h3>casting registation</h3>
                     <a href="#register" class="btn btn-lg  btn-log">Register</a>
 
@@ -144,9 +144,16 @@
 
                                 <!-- home town -->
                                 <div class="col-md-6">
-                                    <label for="exampleInputEmail1" class="form-label">Home town</label>
+                                    <label for="exampleInputEmail1" class="form-label">Current City</label>
                                     <input type="text" class="form-control" id="validationCustom02"
-                                        placeholder="Home town" name="home_town" required>
+                                        placeholder="Current city town" name="home_town" required>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="col-lg-12">
+                                    <label for="exampleInputEmail1" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="Enter your address" name="address" required>
                                 </div>
                                 <hr>
                             </div>
@@ -371,11 +378,16 @@
 
 @section('script')
 <style>
-    .btn-log {
-        background-color: #320958 !important;
+   .btn-log {
+        background-color: #E4D2BA !important;
+        border: 0px solid purple;
+        font-weight: 500;
+        color: #101214;
+    }
+    .btn-log:hover {
+        background-color: #101214 !important;
         border: 0px solid purple;
         color: white;
-        /* margin: 20px; */
     }
 
     .skill-form {
@@ -393,14 +405,6 @@
         display: flex;
     }
 
-    header.hero {
-        background: url(../images/web/interested-woman-posing-sunglasses.jpg) no-repeat center center fixed;
-        -webkit-background-size:cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-bottom: 80px;
-    }
+
 </style>
 @endsection

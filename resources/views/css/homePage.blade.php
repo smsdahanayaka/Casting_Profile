@@ -13,7 +13,7 @@
     }
 
     a {
-        color: #7447ae;
+        color: #1C2125;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         transition: all 0.2s;
@@ -56,19 +56,16 @@
     }
 
     /* Hero Section */
-    header.hero {
-        background: url(../images/web/interested-woman-posing-sunglasses.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-bottom: 80px;
-    }
+
 
     header.hero .hero-text {
         margin-top: 20%;
         margin-bottom: 20%;
+        text-shadow: 2px 2px #000000;
+    }
+    header.hero .hero-text a {
+
+        text-shadow: none;
     }
 
     header.hero .row {
@@ -332,82 +329,6 @@
     }
 
 
-    /* Contact Banner */
-    .contact-banner {
-        background: url(../assets/bg-pat.png) #653a80 repeat;
-        color: #fff;
-        padding: 6em;
-    }
-
-    .contact-banner h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 3em;
-        margin-top: 0;
-        margin-bottom: 1em;
-    }
-
-
-    /* Footer */
-    .footer {
-        background-color: #300c46;
-        padding: 5em;
-    }
-
-    .footer h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 3em;
-        color: #a3a1ac;
-        margin-bottom: 2em;
-    }
-
-    .footer h1 span {
-        color: #fff;
-        font-weight: 300;
-    }
-
-    .footer h1:after {
-        content: '';
-        width: 80px;
-        height: 4px;
-        background-color: #37a7ff;
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translate(-40px, 10px);
-    }
-
-    .footer ul.social-links li a {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .footer ul.social-links li a img {
-        max-height: 40px;
-    }
-
-    /* Sub-footer */
-    .sub-footer {
-        background-color: #300c46;
-        padding: 2em;
-        color: #a3a1ac;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-    }
-
-    .sub-footer p {
-        margin: 0;
-        font-size: 0.5em;
-    }
-
-    .sub-footer p a {
-        color: #fff;
-    }
-
-    .sub-footer p a:hover {
-        opacity: 0.8;
-    }
 
 
     /* Main navigation */

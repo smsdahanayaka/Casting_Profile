@@ -25,6 +25,7 @@ class Profiles extends Model
         'whatsapp_number',
         'email',
         'home_town',
+        'address',
         'height',
         'hair_color',
         'eye_color',

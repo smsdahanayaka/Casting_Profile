@@ -73,6 +73,7 @@ class ProfileController extends Controller
             $admin->mobile_number = $request->input('mobile_number');
             $admin->email = $request->input('email');
             $admin->home_town = $request->input('home_town');
+            $admin->address = $request->input('address');
             $admin->height = $request->input('height');
             $admin->hair_color = $request->input('hair_color');
             $admin->eye_color = $request->input('eye_color');
@@ -247,6 +248,7 @@ class ProfileController extends Controller
         $admin->mobile_number = $request->input('mobile_number');
         $admin->email = $request->input('email');
         $admin->home_town = $request->input('home_town');
+        $admin->address = $request->input('address');
         $admin->height = $request->input('height');
         $admin->hair_color = $request->input('hair_color');
         $admin->eye_color = $request->input('eye_color');

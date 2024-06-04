@@ -171,9 +171,16 @@
 
                                 <!-- home town -->
                                 <div class="col-md-6">
-                                    <label for="exampleInputEmail1" class="form-label">Home town</label>
+                                    <label for="exampleInputEmail1" class="form-label">Current City</label>
                                     <input type="text" class="form-control" id="validationCustom02"
                                         value="{{ $adminData->home_town }}" name="home_town" required>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="col-lg-12">
+                                    <label for="exampleInputEmail1" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        value="{{ $adminData->address }}" name="address" required>
                                 </div>
                                 <hr>
                             </div>

@@ -26,7 +26,7 @@
 
                 <div class="row form-outline">
                     <div class="col">
-                        <input type="text" class="form-control" name="town" placeholder="Home town">
+                        <input type="text" class="form-control" name="town" placeholder="Current town">
                     </div>
 
                     <div class="col">
@@ -81,7 +81,7 @@
                             $currentYear = now()->year;
                             $birthYear = $admin->date_of_birth;
 
-                            $age = $currentYear - $birthYear;
+                            $age = $currentYear - intval($birthYear);
                         @endphp
 
 
@@ -91,6 +91,7 @@
 
                             <ul>
                                 <li>Age is {{ $age }}</li>
+                                <li>{{ $admin->gender }}</li>
                                 <li>{{ $admin->home_town }}</li>
                                 <li>{{ $admin->mobile_number }}</li>
 
@@ -161,7 +162,7 @@
     }
 
     header.hero {
-        background: url(../images/web/interested-woman-posing-sunglasses.jpg) no-repeat center center fixed;
+        /*background: url(../images/web/interested-woman-posing-sunglasses.jpg) no-repeat center center fixed;*/
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
